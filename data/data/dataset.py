@@ -11,14 +11,7 @@ class SpectralDataset(Dataset):
  
     
     def __init__(self, data_dir, target_bands, rgb_bands, augment=False, max_samples=None):
-        """
-        Args:
-            data_dir: Path to directory containing .npy files
-            target_bands: List of target band indices to reconstruct
-            rgb_bands: List of 3 band indices to use as RGB input
-            augment: Whether to apply data augmentation
-            max_samples: Maximum number of samples to load (for faster testing)
-        """
+       
         self.data_dir = data_dir
         self.target_bands = target_bands
         self.rgb_bands = rgb_bands
@@ -46,7 +39,7 @@ class SpectralDataset(Dataset):
         return len(self.file_paths)
     
     def __getitem__(self, idx):
-        """Return (rgb_input, target_bands)"""
+        
         if idx in self.data_cache:
             return self.data_cache[idx]
         
