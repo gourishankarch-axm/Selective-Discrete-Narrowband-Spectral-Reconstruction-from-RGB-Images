@@ -26,9 +26,4 @@ The proposed model is a hybrid U-Net architecture that combines convolutional ne
 | Transformer Dim | 96 |
 | Attention Heads | 4 |
 
-## Installation
 
-```bash
-git clone https://github.com/yourusername/RGB-to-Hyperspectral-Reconstruction.git
-cd RGB-to-Hyperspectral-Reconstruction
-pip install -r requirements.txt
